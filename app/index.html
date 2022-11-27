@@ -20,7 +20,7 @@
   <main class="main">
     <section class="promo-top">
       <div class="promo-top__container">
-        <h2 class="promo-top__title"><span>LevelUp</span> супер продукт для повышения потенции</h2>
+        <h2 class="promo-top__title title"><span>LevelUp</span> супер продукт для повышения потенции</h2>
 
         <div class="promo-top__content">
           <picture class="promo-top__images images-product">
@@ -29,13 +29,13 @@
           </picture>
 
           <ul class="promo-top__list">
-            <li class="promo-top__item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus!</li>
-            <li class="promo-top__item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus!</li>
-            <li class="promo-top__item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus!</li>
+            <li class="promo-top__item promo__item ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus!</li>
+            <li class="promo-top__item promo__item ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus!</li>
+            <li class="promo-top__item promo__item ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus!</li>
           </ul>
         </div>
 
-        <a class="promo-top__link btn" href="#">Сделать заказ</a>
+        <a class="promo-top__link btn" href="#footer__form">Сделать заказ</a>
       </div>
 
       <video class="promo-top__video" autoplay muted loop preload="auto">
@@ -80,7 +80,7 @@
           </li>
         </ul>
       </div>
-      <a class="promo-top__link btn" href="#">Сделать заказ</a>
+      <a class="promo-top__link btn" href="#footer__form">Сделать заказ</a>
     </section>
 
     <section class="reviews">
@@ -115,7 +115,7 @@
         <div class="promo-bottom__content">
           <picture class="promo-bottom__images">
             <source srcset="images/doctor-mobile.png" width="200" height="240" media="(max-width: 768px), (max-height: 420px)">
-            <img class="promo-top__img images-product__img" src="images/doctor2.png" alt="докторая рекомендуют LevelUp супер продукт для потенции"
+            <img class="promo-bottom__img images-product__img" src="images/doctor2.png" alt="докторая рекомендуют LevelUp супер продукт для потенции"
               width="521" height="582" loading="lazy">
           </picture>
 
@@ -128,14 +128,46 @@
           <li class="promo-bottom__item promo__item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus!</li>
         </ul>
 
-        </ul>
+        <a class="promo-top__link btn" href="#footer__form">Сделать заказ</a>
       </div>
     </section>
   </main>
 
   <footer class="footer">
+    <div class="footer__container">
+      <h2 class="footer__title title"><span>LevelUp</span> супер продукт для повышения потенции</h2>
+  
+      <div class="footer__content">
+        <div class="footer__price">
+          <picture class="footer__images images-product">
+            <source srcset="images/product-mobile2.png" width="100" height="169" media="(max-width: 768px), (max-height: 420px)">
+            <img class="footer__img images-product__img" src="images/product.png" alt="LevelUp супер продукт для потенции"
+              width="291" height="451" loading="lazy">
+          </picture>
+          
+          <span class="footer__price-old">999 <span>₽</span></span>
+          <span class="footer__price-new">299 <span>₽</span></span>
+        </div>
+  
+        <form class="footer__form" id="footer__form">
+          <ul class="footer__form-list">
+            <li class="footer__form-item">
+              <label class="footer__form-label" for="name">Ваше имя*</label>
+              <input class="footer__form-input" type="text" id="name" name="name" placeholder="Введите своеё имя" required>
+            </li>
+  
+            <li class="footer__form-item">
+              <label class="footer__form-label" for="tel">Ваш телефон*</label>
+              <input class="footer__form-input" type="tel" id="tel" name="tel" placeholder="380501111111" required>
+            </li>
+          </ul>
+  
+          <!-- <button class="footer__form-btn btn" type="submit">Отправить</button> -->
+          <button class="footer__form-btn" type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
   </footer>
-  <!-- <div id="overlay" onclick="offOverlay()"></div> -->
   <script src="js/main.min.js"></script>
 </body>
 </html>
