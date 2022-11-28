@@ -1,0 +1,37 @@
+.promo-bottom {
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+    margin-bottom: 10px;
+  }
+  
+  &__images {
+    margin-right: 15px;
+  }
+
+  &__content-text {
+    max-width: 500px;
+    flex-shrink: 20;
+    font-family: 'OpenSans', sans-serif;
+    font-weight: 600;
+    @include adaptiveValue("font-size", 20, 14);
+    letter-spacing: 0.2rem;
+    @include line-clamp (8);
+  }
+
+  &__list {
+    align-self: center;
+    margin-bottom: 20px;
+  }
+
+  .btn {
+    margin-bottom: 30px;
+  }
+}
