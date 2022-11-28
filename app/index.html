@@ -136,7 +136,15 @@
   <footer class="footer">
     <div class="footer__container">
       <h2 class="footer__title title"><span>LevelUp</span> супер продукт для повышения потенции</h2>
-  
+      
+      <span class="footer__suptitle">Последний шанс воспользоваться скидкой</span>
+      <div class="footer__timer timer">
+        <div class="timer__items">
+          <div class="timer__item timer__minutes">00</div>
+          <div class="timer__item timer__seconds">00</div>
+        </div>
+      </div>
+
       <div class="footer__content">
         <div class="footer__price">
           <picture class="footer__images images-product">
@@ -149,20 +157,21 @@
           <span class="footer__price-new">299 <span>₽</span></span>
         </div>
   
-        <form class="footer__form" id="footer__form">
+        <form class="footer__form" action="#" id="footer__form">
           <ul class="footer__form-list">
             <li class="footer__form-item">
               <label class="footer__form-label" for="name">Ваше имя*</label>
-              <input class="footer__form-input" type="text" id="name" name="name" placeholder="Введите своеё имя" required>
+              <input class="footer__form-input" type="text" name="name" placeholder="Введите своеё имя" required>
+              <span class="footer__form-prompt">Никита</span>
             </li>
   
             <li class="footer__form-item">
               <label class="footer__form-label" for="tel">Ваш телефон*</label>
-              <input class="footer__form-input" type="tel" id="tel" name="tel" placeholder="380501111111" required>
+              <input class="footer__form-input footer__form-input--tel" type="tel" name="tel" placeholder="380501111111" required>
+
+              <span class="footer__form-prompt footer__form-prompt--tel">89004164193</span>
             </li>
           </ul>
-  
-          <!-- <button class="footer__form-btn btn" type="submit">Отправить</button> -->
           <button class="footer__form-btn" type="submit">Отправить</button>
         </form>
       </div>
